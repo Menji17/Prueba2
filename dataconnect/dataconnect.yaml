@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "visitas_app"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "visitas_app-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
